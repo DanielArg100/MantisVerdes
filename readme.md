@@ -36,7 +36,7 @@ GOT
 
 Aviso Legal
 Este proyecto fue desarrollado exclusivamente con fines educativos y de aprendizaje.
-Harry Potter, sus personajes, nombres, casas, hechizos, imágenes y demás elementos
+Black Clover, sus personajes, nombres, ordenes, imágenes y demás elementos
 relacionados son propiedad intelectual de sus respectivos titulares de derechos. Este
 proyecto no tiene fines comerciales ni pretende infringir derechos de autor, marcas
 registradas ni cualquier otro derecho de propiedad intelectual.
