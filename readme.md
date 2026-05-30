@@ -32,7 +32,4 @@ GOT
     src                 # --> Archivos Estáticos
     index.html          # --> Página Base
 ```
-
-#### Mostrar URL
-
-Settings -> Pages -> Branch -> Save
+<img width="500" height="400" alt="XD3" src="https://github.com/user-attachments/assets/489c92be-506c-4d31-a118-0c961f5fef0f" />
