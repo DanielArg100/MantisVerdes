@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Macondo&family=MedievalSharp&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EEE1C9;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modoOscuro {
+    background-color: #000000;
+}
+
+/* // HEADER */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 225px;
+    padding: 40px;
+    background-image: url("../src/Header/HeaderClaro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.encabezado nav {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.XD {
+    background-color: transparent !important;
+    padding: 0px !important;
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 1.5px pink);
+    transition: 0.4s ease-in-out;
+}
+
+.XD:hover {
+    filter: drop-shadow(0px -20px 0.01px pink) brightness(1.5);
+}
+
+.encabezado nav a {
+    text-decoration: none;
+}
+
+.Links {
+    color: #E5E590;
+    padding: 3px 8px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 3px 0.01px #124527);
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    border: transparent;
+
+}
+
+.Links:hover {
+    filter: drop-shadow(0px -15px 0.01px #E5E590);
+    color: #124527;
+}
+
+.encabezado a img {
+    width: 150px;
+    height: 180px;
+    transition: 0.6s ease-in-out;
+}
+
+.encabezado a img:hover {
+    transform: scale(0.95);
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+/* ! MODO OSCURO HEADER */
+
+.encabezadoO {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 225px;
+    padding: 40px;
+    background-image: url("../src/Header/HeaderOscuro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.encabezadoO .Links {
+    filter: drop-shadow(0px 3px 0.01px #247235) brightness(1.1);
+    color: #E5E590;
+}
+
+.encabezadoO .Links:hover {
+    filter: drop-shadow(0px -15px 0.01px #E5E590) brightness(1.1);
+    color: #247235;
+}
+
+/* TODO CARROUSEL */
+
+.carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+
+/* - MAIN */
+.IZQ {
+    grid-area: item1;
+}
+
+.IZQ2 {
+    grid-area: item4;
+}
+
+.CEN {
+    grid-area: item2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    filter: drop-shadow(1px 3px 5px #124527);
+}
+
+.CEN p {
+    padding: 5px;
+    line-height: 25px;
+    color: #E5E590;
+    animation: letras 10s ease-in-out infinite alternate;
+}
+
+@keyframes letras {
+    from {
+        filter: drop-shadow(0px 1px 0.1px #124527);
+        color: #E5E590;
+    }
+
+    to {
+        filter: drop-shadow(0px -10px 0.1px #E5E590);
+        color: #124527;
+    }
+}
+
+.DER {
+    grid-area: item3;
+}
+
+.cuerpo {
+    width: 75%;
+    height: 380px;
+    margin: 50px auto;
+    display: grid;
+    border-radius: 15px;
+    grid-template-areas:
+        "item1 item4 item3"
+        "item2 item2 item3";
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.cuerpo div {
+    filter: drop-shadow(4px 8px 5px #124527);
+    padding: 5px 0px;
+    border-radius: 15px;
+    background-color: #247235;
+    text-align: center;
+}
+
+.IZQ img,
+.IZQ2 img {
+    height: 150px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.DER img {
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+/* ! MODO OSCURO MAIN */
+
+.CuerpoO div {
+    background-color: #124527;
+    filter: drop-shadow(4px 8px 5px #247235);
+}
+
+.CuerpoO .CEN {
+    filter: drop-shadow(1px 3px 5px #247235);
+}
+
+.CuerpoO .CEN p {
+    padding: 5px;
+    line-height: 25px;
+    color: #E5E590;
+    animation: letrasO 10s ease-in-out infinite alternate;
+}
+
+@keyframes letrasO {
+    from {
+        filter: drop-shadow(0px 1px 0.1px #247235);
+        color: #E5E590;
+    }
+
+    to {
+        filter: drop-shadow(0px -10px 0.1px #E5E590);
+        color: #247235;
+    }
+}
+
+/* SECCIÓN FOOTER */
+
+.píeDePágina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    padding: 40px;
+    background-image: url("../src/Footer/Footer1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.info img {
+    height: 120px;
+    width: 95px;
+}
+
+.info p {
+    text-align: center;
+    font-size: 15px;
+    color: #E5E590;
+    filter: drop-shadow(0px 3px 0.01px #124527);
+}
+
+.redes {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes iframe {
+    border-radius: 15px;
+    margin: auto;
+}
+
+.redes div {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes div a img {
+    height: 45px;
+    width: 45px;
+    transition: 0.3s ease-in-out;
+}
+
+.redes div a img:hover {
+    filter: drop-shadow(3px 3px 4px black) invert();
+    transform: scale(1.1);
+
+}
+
+.enlaces {
+    width: 30%;
+}
+
+.enlaces a {
+    text-decoration: none;
+}
+
+/* ° MODO OSCURO PÍE DE PÁGINA */
+
+.PioO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    padding: 40px;
+    background-image: url("../src/Footer/Footer2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
