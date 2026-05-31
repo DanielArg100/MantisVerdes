@@ -1,5 +1,7 @@
 import { ListaProductos } from "./db.js";
 
+
+
 function MostrarProductos(lista) {
     let contenedor = document.querySelector(".contenedor")
     contenedor.innerHTML = ""
@@ -37,11 +39,14 @@ texto.addEventListener("keyup", function () {
 })
 */
 
-let BMO = document.querySelector(".mOscuro")
-let body = document.getElementById("cuerpo")
-let cuerpo = document.getElementById("cuerpoMain")
-let encabezado = document.getElementById("encabezado")
-let pieDePágina = document.getElementById("Pie")
+const BMO = document.querySelector(".mOscuro")
+const body = document.getElementById("cuerpo")
+const cuerpo = document.getElementById("cuerpoMain")
+const encabezado = document.getElementById("encabezado")
+const pieDePágina = document.getElementById("Pie")
+const fooha = document.getElementById("fooha")
+const foohatext = document.getElementById("foohatext")
+
 let estado = "Oscuro"
 
 
@@ -60,9 +65,18 @@ window.CambiarModo = function () {
     <button onclick="CambiarModo()" type="button" class="Links">Cambiar a Modo ${estado}</button>
 `
     }
+
     body.classList.toggle("modoOscuro");
-    encabezado.classList.toggle("encabezadoO")
-    cuerpo.classList.toggle("CuerpoO")
-    pieDePágina.classList.toggle("PioO")
+    encabezado.classList.toggle("encabezadoO");
+    pieDePágina.classList.toggle("PioO");
+    if (cuerpo) {
+        cuerpo.classList.toggle("CuerpoO");
+    }
+    if (fooha) {
+        fooha.classList.toggle("foohaO");
+    }
+    if (foohatext) {
+        foohatext.classList.toggle("foohatextO")
+    }    
 }
 
