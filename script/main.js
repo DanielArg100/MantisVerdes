@@ -107,21 +107,29 @@ let R = document.getElementById("R")
 let F = document.getElementById("F")
 let E = document.getElementById("E")
 
+if (X) {
 X.addEventListener("click", function () {
     MostrarProductos(ListaProductos)
 })
+}
+if (R) {
 R.addEventListener("click", function () {
     let filtrar = ListaProductos.filter(i => i.id.includes("ropa"))
     MostrarProductos(filtrar)
 })
+}
+if (F) {
 F.addEventListener("click", function () {
     let filtrar = ListaProductos.filter(i => i.id.includes("fk"))
     MostrarProductos(filtrar)
 })
+}
+if (E) {
 E.addEventListener("click", function () {
     let filtrar = ListaProductos.filter(i => i.id.includes("extra"))
     MostrarProductos(filtrar)
 })
+}
 
 
 window.MostrarCarro = function () {
@@ -155,4 +163,10 @@ window.MostrarCorazon = function () {
         imageHeight: 200,
         imageAlt: "Custom image"
     });
+}
+
+let FUJA = document.getElementById("FUJA")
+
+window.subir = function () {
+    FUJA.play()
 }

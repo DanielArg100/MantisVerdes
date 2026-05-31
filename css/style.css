@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Macondo&family=MedievalSharp&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -760,4 +764,28 @@ main {
     padding: 5px;
     border-radius: 15px;
     color: #E5E590;
+}
+
+/* - ULTIMO GRAN ENEMIGO (LA COSA PARA SUBIR) */
+
+.SubirArriba {
+    position: fixed;
+    background-color: transparent;
+    bottom: 10px;
+    right: 10px;
+    border: transparent;
+}
+
+.SubirArriba img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.SubirArriba img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px #E5E590);
 }
