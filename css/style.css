@@ -26,6 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: drop-shadow(0px 5px 5px #124527);
 }
 
 .encabezado nav {
@@ -39,7 +40,7 @@ body {
     padding: 0px !important;
     transform: scale(1.5);
     filter: drop-shadow(0px 0px 1.5px pink);
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .XD:hover {
@@ -55,7 +56,7 @@ body {
     padding: 3px 8px;
     border-radius: 10px;
     filter: drop-shadow(0px 3px 0.01px #124527);
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
     background-color: transparent;
     border: transparent;
 
@@ -428,6 +429,7 @@ main {
 
 .galeria {
     margin: 30px auto;
+    margin-bottom: 120px;
     width: 100%;
     height: 700px;
     display: grid;
@@ -441,15 +443,321 @@ main {
     padding: 5%;
 }
 
-.galeria img, .galeria video {
+.galeria img,
+.galeria video {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
 }
 
-.galeria img:hover, .galeria video:hover {
+.galeria img:hover,
+.galeria video:hover {
     transition: 0.3s ease-in-out;
     transform: scale(1.02);
     filter: drop-shadow(15px 15px 20px #E5E590);
+}
+
+/* ? SECCIÓN PRODUCTOS */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+.Tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px;
+    align-items: center;
+    width: 300px;
+    height: 900px;
+    background-image: url("../src/Productos/TarjetaClaro.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #124527;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+    filter: drop-shadow(0px 0px 3px black);
+    text-align: center;
+}
+
+.Tarjeta h1 {
+    font-size: 35px;
+    width: 95%;
+    height: 100px;
+}
+
+.Tarjeta:hover {
+    filter: drop-shadow(0px 0px 15px black) brightness(1.1);
+    transform: scale(1.02);
+}
+
+.Tarjeta img {
+    width: 80%;
+}
+
+.Tarjeta p {
+    color: #247235;
+    margin-bottom: 200px;
+}
+
+.Tarjeta-footer {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Tarjeta-footer button {
+    background-color: transparent;
+    border: transparent;
+    color: #124527;
+    font-weight: bold;
+}
+
+.CoranzonDeLosHuevos {
+    padding-right: 25px;
+    transform: scale(1.6);
+    transition: 0.3s ease-in-out;
+}
+
+.CoranzonDeLosHuevos:hover {
+    transform: scale(1.8) translateY(-5px);
+    filter: invert() drop-shadow(7px -7px 1px red);
+}
+
+.Agregar-Carro {
+    transition: 0.3s ease-in-out;
+
+}
+
+.Agregar-Carro:hover {
+    filter: drop-shadow(0px -20px 0.01px #247235);
+    color: #E5E590;
+}
+
+.sistemaFiltrado {
+    display: grid;
+    width: 100%;
+    margin: 25px auto;
+    grid-template-areas:
+        "item1 item1 item2 item2";
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5%;
+    gap: 90px;
+}
+
+.filtradoNombre {
+    grid-area: item1;
+    background-image: url(../src/Footer/Footer1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #124527;
+    border-right: 5px solid #124527;
+    border-radius: 15px;
+    gap: 40px;
+    color: #E5E590;
+    filter: drop-shadow(0px 10px 10px #124527);
+    transition: 0.3s ease-in-out;
+}
+
+.filtradoNombre label {
+    filter: drop-shadow(0px 4px 0.01px #124527);
+}
+
+.filtradoNombre input {
+    background-color: #EEE1C9;
+    border: transparent;
+    border-radius: 15px;
+    filter: drop-shadow(0px 5px 5px #124527);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.filtradoNombre input:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0px 10px 3px #124527);
+}
+
+.filtradoNombre:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0px 15px 10px #124527);
+}
+
+.FiltradoLogo {
+    grid-area: item2;
+    background-image: url(../src/Footer/Footer1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #124527;
+    border-right: 5px solid #124527;
+    border-radius: 15px;
+    gap: 10px;
+    color: #E5E590;
+    filter: drop-shadow(0px 10px 10px #124527);
+    transition: 0.3s ease-in-out;
+
+}
+
+.botonesFiltrado,
+.botonesFiltrado1,
+.botonesFiltrado2,
+.botonesFiltrado3 {
+    background-color: transparent;
+    border: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110px;
+    width: 110px;
+    filter: drop-shadow(0px 0px 5px black);
+    object-fit: cover;
+    transition: 0.1s ease-in-out;
+}
+
+
+.botonesFiltrado:hover,
+.botonesFiltrado1:hover,
+.botonesFiltrado2:hover,
+.botonesFiltrado3:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px #E5E590);
+}
+
+/* ! MODO OSCURO PRODUCTOS */
+
+.sistemaFiltradoO .filtradoNombre {
+    grid-area: item1;
+    background-image: url(../src/Footer/Footer2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #247235;
+    border-right: 5px solid #247235;
+    border-radius: 15px;
+    gap: 40px;
+    color: #E5E590;
+    filter: drop-shadow(0px 10px 10px #124527);
+    transition: 0.3s ease-in-out;
+}
+
+.sistemaFiltradoO .FiltradoLogo {
+    grid-area: item2;
+    background-image: url(../src/Footer/Footer2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid #247235;
+    border-right: 5px solid #247235;
+    border-radius: 15px;
+    gap: 10px;
+    color: #E5E590;
+    filter: drop-shadow(0px 10px 10px #124527);
+    transition: 0.3s ease-in-out;
+}
+
+.sistemaFiltradoO .FiltradoLogo .botonesFiltrado1 {
+    background-image: url(../src/Productos/BotonRopaO.png) !important;
+}
+
+.sistemaFiltradoO .FiltradoLogo .botonesFiltrado2 {
+    background-image: url(../src/Productos/BotonFKO.png) !important;
+}
+
+.sistemaFiltradoO .FiltradoLogo .botonesFiltrado3 {
+    background-image: url(../src/Productos/BotonLibroO.png) !important;
+}
+
+.TarjetaO {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px;
+    align-items: center;
+    width: 300px;
+    height: 900px;
+    background-image: url("../src/Productos/TarjetaOscuro.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #E5E590;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+    filter: drop-shadow(0px 0px 3px #E5E590);
+    text-align: center;
+}
+
+.TarjetaO:hover {
+    filter: drop-shadow(0px 0px 15px #E5E590);
+}
+
+/* TODO SECCIÓN CONTACTOS */
+
+.contenedor_formulario {
+    background-color: #247235;
+    border-radius: 15px;
+    display: flex;
+    height: 500px;
+    width: 800px;
+    margin: 50px auto;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.contenedor_formulario:hover {
+    transform: scale(1.015);
+
+}
+
+
+
+.contenedor_formulario img {
+    width: 50%;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 10px solid #EEE1C9;
+}
+
+.contenedor_formulario form {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor_formulario input,
+.contenedor_formulario textarea {
+    background-color: #124527;
+    border: transparent;
+    padding: 5px;
+    border-radius: 15px;
+    color: #E5E590;
 }
